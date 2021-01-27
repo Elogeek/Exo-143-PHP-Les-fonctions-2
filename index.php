@@ -9,7 +9,7 @@ function boolTrue($bool) {
 
 //exo2
 function text() {
-    $chaine = "Coucou,...blablabla ! <br>";
+    $chaine = "Coucou,...blablabla !.<br>";
     return $chaine;
 }
 echo text();
@@ -18,7 +18,7 @@ echo text();
 function blabla(string $text1 , string $text2, $br) {
        $text1 = "hello";
        $text2 = "world";
-       return $text1 . $text2 . " ! <br>";
+       return $text1 . $text2 . " !<br>";
 }
 
 //exo 4
@@ -32,8 +32,9 @@ function number(Int $number1, Int $number2) {
     else {
         return "Les 2 nombres sont égaux";
     }
-    echo number(5,3);
 }
+
+echo number(5,3);
 
 //exo 5
 function returnString (string  $text, Int $number) {
@@ -68,8 +69,9 @@ function sexe($genre, Int $age) {
         else {
         return "Veuillez indiquer Homme ou Femme dans le genre";
         }
-         echo sexe("femme", "");
 }
+
+echo sexe("femme",0);
 
 //exo 8
 function finish(Int $number1 = 1, Int $number2 = 2, Int $number3 = 3) {
